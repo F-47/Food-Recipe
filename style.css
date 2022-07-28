@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+            url("Imgs/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+a{
+    color: black !important;
+    text-align: center !important;
+}
+
+.modal-open {
+    overflow-y: inherit !important;
+    padding: 0 !important;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(124, 81, 1);
+    border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #765c10;
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #856d26;
+}
+
+/* Start search-landing-page */
+
+.search-landing-page{
+    width: 100%;
+    min-height: 10vh;
+    user-select: none;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 60px;
+    padding: 20px 20px  ;
+    
+}
+
+.search-box input{
+    width: 600px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: transparent;
+    font-size: 20px;
+}
+
+@media (max-width:760px){
+    .search-box input {
+        width: 500px;
+    }
+}
+@media (max-width:620px){
+    .search-box input {
+        width: 280px;
+    }
+}
+@media (max-width:380px){
+    .search-box input {
+        width: 200px;
+    }
+}
+
+.search-box input::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.search-box input::selection{
+    background-color: rgba(179, 64, 11, 0.438);
+}
+
+.search-box button{
+    background-color: transparent;
+    border: none;
+}
+
+.search-box i{
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    background-color: #765c10;
+    padding: 10px;
+}
+/* End search-landing-page */
+
+/* Start Result */
+.card .btn-primary {
+    background-color: #765c10 !important;
+    border-color: transparent !important;
+}
+
+
+/* End Result */

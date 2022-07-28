@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css File  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Library -->
+    <script
+      src="https://kit.fontawesome.com/ccfa29ce82.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Title -->
+    <title>Food Recipe</title>
+  </head>
+  <body>
+    <!-- Title  -->
+    <cite
+      class="d-flex justify-content-center align-items-center text-center fs-3 fw-bold text-white p-5"
+      >“A recipe has no soul. You as the cook must bring soul to the recipe.” –
+      Thomas Keller</cite
+    >
+    <!-- Title  -->
+    <!-- Start search-landing-page -->
+    <div
+      class="search-landing-page d-flex justify-content-center align-items-end text-center"
+    >
+      <form method="GET" autocomplete="off" onsubmit="getMealList()">
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Search here"
+            name="q"
+            class="search"
+          />
+          <button type="submit" class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- End Search Bar -->
+
+    <div class="meals" id="meals">
+      <div class="container-lg pt-3">
+        <div class="text text-center fs-2 text-white font-bold mb-5">
+          Search Results:
+        </div>
+        <div class="row d-flex align-items-center the-recipet"></div>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
